@@ -1,14 +1,15 @@
-import { Component } from '@angular/core';
-import { setStatusBarColor } from '../../../utils';
+import {Component} from '@angular/core';
+import {setStatusBarColor} from '../../../utils';
 
 @Component({
   moduleId: module.id,
   selector: 'app-home',
-  templateUrl: './home.component.html'
+  templateUrl: './home.component.html',
+  styleUrls: ['./home.component.css'],
 })
 export class HomeComponent {
 
   ngOnInit() {
-    setStatusBarColor('dark', '#97d9e9');
+    setStatusBarColor('light', 'transparent');
   }
 }
